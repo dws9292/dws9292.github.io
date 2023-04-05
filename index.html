@@ -1,9 +1,171 @@
-<html>
-<body>
-<h1>Dominika</h1>
-<p>Welcome to my website!</p>
-<img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>
+    Home page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
 
-</body>
+    </head>
+    <body>
+        <header>
+<h1> Semantic Elements </h1>
 
+        </header>
+
+
+<main>
+
+
+    <div id="block1">
+        <h3> What are Semantic Elements?</h3>
+        <p> Semantic Elements are used because they have a define the context, of what
+         is contained between their opening and closing tags.
+        Non-Semantic Elements include<span class="fontchange"> &lt;div&gt;</span> and 
+        <span class="fontchange">&lt;span&gt;</span> elements. 
+        These elements do not give any hint as to what will be contained 
+        between their opening and closing tags.
+        They simply change the way in which the content is presented. 
+    </p> 
+</div>
+<div id="block2"> <h3> Benefits of using Semantic Elements:</h3> 
+          <ul>
+            <li>Better Search Engine Optimization </li>
+            <li> Easy to understand for other developers</li>
+            <li> Easier to read for screenreaders, which enabled the visually impaired to have access to your content</li>
+          </ul>
+        </div>
+        <div id="block3">
+        <h4  class="attri"> Attributes</h4>
+<p> Some elements allow for what is called an <span class="attri"> attribute.</span>
+ 
+An <span class="attri"> attribute</span> provides additional information about an element. 
+For example if you are considering placing an image on your page, you will 
+have to use the <span class="fontchange">&lt;img&gt;</span> tag. 
+Its a self-closing tag, but you will need to include the <span class="attri"> src= attribute</span> in the opening tag. 
+This enables you to include the address of the image you are trying to 
+add to your page.
+All <span class="attri">attributes </span>are placed in the opening tag of an element.
+
+An <span class="attri">attribute </span> keyword is usually followed by an equals = sign, which then lists any values the attribute requires,
+like a name or sizing info.</span>
+ Other <span class="attri"> attributes </span> include <span class="attri"> id </span> and
+ <span class="attri"> class</span>, which are CSS selectors. 
+ There are also <span class="attri">height</span> and 
+ <span class="attri">width attributes</span>  that allow you to resize your image. 
+<span class="attri">attributes.</span></p>
+</div>
+        
+    
+<table>
+   
+    <thead>
+        <tr>
+            <th scope="col" class="coltitle"> Element 
+            </th>
+            <th scope="col" class="coltitle"> Purpose
+            </th>
+            <th scope="col" class="coltitle"> Additional Information 
+            </th>
+            
+        </tr>
+    </thead>
+        <tbody>
+
+        <tr>
+            <td class="fontchange">&lt;header&gt;</td>
+        <td>Creates a container that is usually used for navigational links or introductory content such as banners and headings </td>
+        <td>Can also include navigational bar</td></tr>
+
+        <tr>
+            <td class="fontchange">&lt;nav&gt;</td>
+            <td>A container for a navigational panel </td>
+            <td>Usually placed inside the header of page to ensure its visible. 
+             This element requires a child element for creating lists, such as
+             <span class="fontchange"> &lt;ul&gt; or &lt;ol&gt;</span>, 
+             followed by <span class="fontchange">&lt;li&gt;</span> for 
+            list items, which will include the links to specific pages </td>
+        </tr>
+
+        <tr>
+            <td class="fontchange">&lt;main&gt;</td><td>Encapsulates the dominant content of your page </td>
+            <td>Helps describe where an element and its content is located, based on conventional development standards</td>
+        </tr>
+
+        <tr>
+            <td class="fontchange">&lt;footer&gt;</td><td>Creates a section at the bottom of page specifically for contact info etc</td>
+            <td>Helps describe where an element and its content is located, based on conventional development standards. Can also include site maps,
+            copy right info and links if needed. The footer element is placed before the closing tag of the body element and after the closing main
+            tag in the HTML structure</td>
+        </tr>
+        
+        <tr>
+            <td class="fontchange">&lt;article&gt;</td><td>Holds content that makes sense on it own, like articles or blogs</td>
+            <td>Using this tag to signposts the beginning and end of content such as articles, helps screen readers in accurately identifying
+             this beginning and end for the user</td>
+            
+        </tr>
+
+        <tr>
+                <td class="fontchange">&lt;section&gt;</td><td>Divides page into sections. Articles can be contained inside this tag</td>
+                <td>Many things can be contained within the <span class="fontchange">&lt;section&gt;</span> element. 
+                 A news website may want to dedicate a section to breaking news, which can contain articles and blog posts.
+                 Depending on the context, sections can encapsulate articles or be placed inside. 
+                 <span class="fontchange">&lt;article&gt;</span> elements </td>
+        </tr>
+
+            <tr>
+                <td class="fontchange">&lt;aside&gt;</td><td>Marks additional information that can enhance another element,
+                  such as an article, but isnt required in order to understand the main content</td>
+                <td>Can be used alongside elements like <span class="fontchange">&lt;article&gt;</span> 
+                    or <span class="fontchange">&lt;section&gt;</span> Usually a good place for end notes,
+                     bibliographies,comments, pull quotes and any other additional information</td>
+            </tr>
+        <tr>
+            <td class="fontchange">&lt;figure&gt;</td>
+            <td>Contains media such as diagrams etc that are referrenced in the main flow of the document.</td>
+            <td> You will need to include the correct tag for the type of media you are including here, such as the 
+            <span class="fontchange">&lt;img&gt;</span> tag followed by a <span class="attri"> src attribute </span> and a link.
+            Make sure to make your website readable for screen readers by including alt text </td>
+
+        </tr>
+         
+        <tr>
+            <td class="fontchange">&lt;figcaption&gt;</td><td>Used to provide caption to media inside figure element</td>
+            <td>Short explanation of media posted, helps screen readers identify that this is a caption belonging to said media</td>
+        
+        </tr>
+        
+        <tr>
+            <td class="fontchange">&lt;img&gt;</td><td>Used to add image on to webpage </td>
+            <td> The<span class="fontchange">&lt;img&gt;</span> tag requires a <span class="attri"> src attribute</span>.
+                 Other important <span class="attri"> attributes:</span> <span class="attri"> </span> <span class="attri"> height </span>
+                  and <span class="attri">width </span> </td>
+                
+        </tr>
+        
+        <tr>
+            <td class="fontchange">&lt;video&gt;</td>
+            <td>Used to add videos onto web page </td>
+            <td>Uses src attribute. Other <span class="attri"> attributes</span> may inlcude: </span> 
+            <span class="attri"> height </span>
+            and <span class="attri">width </span>, <span class="attri"> controls,</span> 
+            as well as <span class="attri">autoplay controls.</span> </td> 
+            
+        </tr>
+
+        </tbody>
+    
+    
+
+    
+</table>
+
+    
+</main>
+<footer>
+
+
+</footer>
+    </body>
 </html>
